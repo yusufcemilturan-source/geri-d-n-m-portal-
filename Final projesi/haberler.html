@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haberler</title>
+
+  <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+      background-color: #eef5ee;
+      font-family: Arial, sans-serif;
+    }
+
+    /* ÜST MENÜ ELEMANLARI (2. KODDAKİ YENİ KONUMLAR VE BOYUTLAR) */
+    #anasayfa {
+      position: absolute;
+      top: 10px;
+      left: 217px;
+      font-size: 30px;
+      margin: 0;
+      z-index: 1;
+    }
+
+    #haberler {
+      position: absolute;
+      top: 10px;
+      left: 410px;
+      font-size: 30px;
+      margin: 0;
+      z-index: 1;
+    }
+
+    #ekohesaplayıcı {
+      position: absolute;
+      top: 10px;
+      left: 580px;
+      font-size: 30px;
+      margin: 0;
+      z-index: 1;
+    }
+
+    #kullanıcıhesabı {
+      position: absolute;
+      top: 10px;
+      left: 855px;
+      font-size: 30px;
+      margin: 0;
+      z-index: 1;
+    }
+
+    #günlükgörevler {
+      position: absolute;
+      top: 10px;
+      left: 1125px;
+      font-size: 30px;
+      margin: 0;
+      z-index: 1;
+    }
+
+    #logo {
+      position: absolute;
+      top: -5px;
+      left: 20px;
+      font-size: 50px;
+      margin: 0;
+      z-index: 1;
+      color: green;
+    }
+
+    /* ÇİZGİ VE DİKDÖRTGEN */
+    #cizgi {
+      position: absolute;
+      top: 60px;
+      left: 10px;
+      width: 1650px;
+      height: 2px;
+      background-color: black;
+      z-index: 1;
+    }
+
+    #dikdortgen1 {
+      position: absolute;
+      top: 5px;
+      left: 10px;
+      width: 1525px;
+      height: 50px;
+      background-color: #fdfeff;
+      border-radius: 15px;
+      box-sizing: border-box;
+    }
+
+    /* HABER İÇERİK ALANI */
+    .haber-icerik-alani {
+      position: absolute;
+      top: 100px;
+      left: 50px;
+      width: 1400px;
+      padding-bottom: 50px;
+    }
+
+    h1.ana-baslik {
+      color: #1b5e20;
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .alt-aciklama {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    h2.haber-baslik {
+      color: #2e7d32;
+      font-size: 24px;
+      margin-top: 25px;
+      margin-bottom: 5px;
+    }
+
+    p.haber-metni {
+      line-height: 1.6;
+      font-size: 16px;
+      text-align: justify;
+      color: #222;
+    }
+  </style>
+
+</head>
+<body>
+
+  <!-- ÜST MENÜ VE LOGO -->
+  <h1 id="anasayfa">ana sayfa</h1>
+  <h2 id="haberler">haberler</h2>
+  <h3 id="ekohesaplayıcı">eko hesaplayıcı</h3>
+  <h4 id="kullanıcıhesabı">kullanıcı hesabı</h4>
+  <h5 id="günlükgörevler">günlük görevler</h5>
+  <h7 id="logo">♻</h7>
+
+  <div id="cizgi"></div>
+  <div id="dikdortgen1"></div>
+
+  <!-- HABERLER İÇERİĞİ -->
+  <div class="haber-icerik-alani">
+
+    <h1 class="ana-baslik">Dünyanın Dört Bir Yanından İklim Haberleri</h1>
+    <p class="alt-aciklama">Dünyadan ve Türkiye'den en güncel iklim haberleri.</p>
+    
+    <hr>
+
+    <!-- HABER 1 -->
+    <h2 class="haber-baslik">1. BM ve Dünya Meteoroloji Örgütü'nden Rekor El Niño Uyarısı</h2>
+    <p class="haber-metni"><b>Yayın Tarihi:</b> Eylül 2026</p>
+    <p class="haber-metni">
+      Dünya Meteoroloji Örgütü ve Birleşmiş Milletler uzmanları, küresel ölçekte etkili olan El Niño iklim olayının hızla güçlendiğini açıkladı. 
+      Yapılan son analizlere göre dünya genelinde kayıtlara geçen en sıcak iki ay geride bırakıldı. 
+      Uzmanlar, Pasifik Okyanusu'ndaki bu ısınmanın yıl sonuna doğru zirve yapacağını öngörüyor. 
+      Küstah sıcaklıkların mevsimsel etkilerle birleşmesi kuraklık riskini ciddi oranda artırıyor. 
+      Özellikle orman yangınlarının, duman ve hava kirliliği ile birleşerek insan sağlığını tehdit edeceği belirtiliyor. 
+      Sıcaklık eşiklerinin aşılmasıyla birlikte hastanelere yapılan başvurularda artış bekleniyor. 
+      Gelişmekte olan ülkelerde tarımsal rekolte kayıplarının yaşanabileceği uyarısı yapıldı. 
+      Küresel gıda güvenliği açısından acil tedbirlerin alınması gerektiği vurgulanıyor. 
+      Hükümetlerin aşırı hava olaylarına karşı acil eylem planlarını devreye sokması isteniyor. 
+      İklim uzmanları, bu sürecin etkilerinin 2027 yılına kadar hissedilebileceğini dile getiriyor.
+    </p>
+
+    <br><hr>
+
+    <!-- HABER 2 -->
+    <h2 class="haber-baslik">2. Pasifik Ada Ülkeleri İçin Yüzyılın Tahliye Planı Başladı</h2>
+    <p class="haber-metni"><b>Yayın Tarihi:</b> Eylül 2026</p>
+    <p class="haber-metni">
+      İklim krizi sebebiyle yükselen deniz seviyeleri Pasifik adalarını yok olma tehlikesiyle karşı karşıya getirdi. 
+      Tuvalu ve Kiribati gibi ada ülkelerinde ortalama kara yüksekliği deniz seviyesinin sadece iki metre üstünde yer alıyor. 
+      NASA'nin son verilerine göre gelecek 30 yıl içinde bu bölgelerde su seviyesinin en az 15 santimetre daha yükselmesi bekleniyor. 
+      Bu durum kıyıların kaybolmasına ve içme suyu kaynaklarının tuzlanmasına neden oluyor. 
+      Devletler, vatandaşlarının geleceğini korumak adına tarihte eşi benzeri görülmemiş tahliye planları hazırlıyor. 
+      Tuvalu hükümeti, vatandaşlarının kademeli olarak göç edebilmesi için Avustralya ile resmi anlaşmalar imzaladı. 
+      Kiribati ise halkının gelecekte yerleşebilmesi için başka ülkelerden toprak satın alma yoluna gitti. 
+      Ada halkları yüzlerce yıllık kültürlerini ve ata topraklarını geride bırakma riskiyle karşı karşıya. 
+      Uluslararası toplum, yaşanacak bu iklim mültecileri dalgası için henüz ortak bir hukuki statü oluşturabilmiş değil. 
+      Bu durum, iklim değişikliğinin sadece bir çevre sorunu değil, doğrudan bir varoluş krizi olduğunu gösteriyor.
+    </p>
+
+    <br><hr>
+
+    <!-- HABER 3 -->
+    <h2 class="haber-baslik">3. İklim Krizi Türkiye'yi Vurdu: Yaz Mevsiminde 32 Gün Fazladan Sıcak Yaşandı</h2>
+    <p class="haber-metni"><b>Yayın Tarihi:</b> Eylül 2026</p>
+    <p class="haber-metni">
+      İklim araştırmaları merkezi Climate Central tarafından yayınlanan rapora göre Türkiye'de bu yaz mevsiminin dengesi tamamen bozuldu. 
+      İnsan kaynaklı iklim değişikliği nedeniyle Türkiye genelinde vatandaşlar ortalama 32 gün fazladan tehlikeli sıcaklığa maruz kaldı. 
+      Aşırı sıcaklardan en çok etkilenen şehir 40 gün ilave sıcaklık yükü ile Adana oldu. 
+      Adana'yı 39 günle Gaziantep, 37 günle İstanbul ve 34 günle Bursa takip etti. 
+      İstanbul'da yaşayanlar için yaz dönemindeki her üç günden biri iklim krizinin eklediği yüksek sıcaklıklarla geçti. 
+      Aşırı sıcak dalgaları şehirlerdeki yaşlılar, çocuklar ve kronik hastalar için ciddi sağlık riskleri oluşturdu. 
+      Tarım alanlarında kuraklık artarken barajlardaki su seviyeleri kritik eşiklerin altına geriledi. 
+      Uzmanlar kentlerdeki betonlaşmanın "ısı adası" etkisi yaratarak sıcaklığı daha da katladığını belirtiyor. 
+      Su kaynaklarının korunması ve şehirlerin iklim krizine dirençli hale getirilmesi için çağrılar yapılıyor. 
+      Türkiye'deki bu tablo, kıta genelinde yaşanan büyük küresel sıcaklık dalgasının bir parçası olarak değerlendiriliyor.
+    </p>
+
+  </div>
+
+</body>
+</html>

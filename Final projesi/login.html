@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Geri Dönüşüm Portalı</title>
+    <style>
+        body { background-color: #eef5ee; font-family: Arial, sans-serif; }
+        .kutu { background: white; width: 350px; margin: 40px auto; padding: 20px; border-radius: 12px; border: 2px solid #2e7d32; }
+        input { width: 92%; padding: 8px; margin-bottom: 10px; }
+        button { width: 98%; padding: 10px; color: white; border: none; font-weight: bold; cursor: pointer; }
+        .yesil { background-color: #2e7d32; }
+        .mavi { background-color: #0288d1; }
+    </style>
+</head>
+<body>
+    <div class="kutu">
+        <h1 style="color:#2e7d32; text-align:center;">GERİ DÖNÜŞÜM PORTALI</h1>
+
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                    <p style="color: red; text-align: center;">{{ message }}</p>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+        <h2>Giriş Yap</h2>
+        <form method="POST">
+            <input type="hidden" name="islem" value="giris">
+            <input type="text" name="email" placeholder="E-posta">
+            <input type="password" name="sifre" placeholder="Şifre">
+            <button type="submit" class="yesil">Giriş Yap</button>
+        </form>
+
+        <hr style="margin: 30px 0;">
+
+        <h2>Kaydol</h2>
+        <form method="POST">
+            <input type="hidden" name="islem" value="kayit">
+            <input type="text" name="email" placeholder="E-posta">
+            <input type="password" name="sifre" placeholder="Şifre">
+            <button type="submit" class="mavi">Kaydol ve Hesabı Oluştur</button>
+        </form>
+    </div>
+</body>
+</html>

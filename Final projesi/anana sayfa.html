@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ana Sayfa</title>
+
+  <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+      background-color: #eef5ee;
+      font-family: Arial, sans-serif;
+    }
+
+    /* BAŞLIK */
+    #anasayfa {
+      position: absolute;
+      top: 10px;          /* üstten 40px aşağıda */
+      left: 217px;        /* soldan 100px içeride */
+      font-size: 30px;    /* yazı boyutu */
+      margin: 0;
+      z-index: 1;
+    }
+
+
+    /* BAŞLIK */
+    #haberler {
+      position: absolute;
+      top: 10px;          /* üstten 40px aşağıda */
+      left: 410px;        /* soldan 100px içeride */
+      font-size: 30px;    /* yazı boyutu */
+      margin: 0;
+      z-index: 1;
+    }
+
+
+    /* BAŞLIK */
+    #ekohesaplayıcı {
+      position: absolute;
+      top: 10px;          /* üstten 40px aşağıda */
+      left: 580px;        /* soldan 100px içeride */
+      font-size:30px;    /* yazı boyutu */
+      margin: 0;
+      z-index: 1;
+    }
+
+
+    /* BAŞLIK */
+    #kullanıcıhesabı{
+      position: absolute;
+      top: 10px;          /* üstten 40px aşağıda */
+      left: 855px;        /* soldan 100px içeride */
+      font-size: 30px;    /* yazı boyutu */
+      margin: 0;
+      z-index: 1;
+    }
+
+
+    /* BAŞLIK */
+    #günlükgörevler{
+      position: absolute;
+      top: 10px;          /* üstten 40px aşağıda */
+      left: 1125px;        /* soldan 100px içeride */
+      font-size: 30px;    /* yazı boyutu */
+      margin: 0;
+      z-index: 1;
+    }
+
+
+    /* BAŞLIK */
+    #logo{
+      position: absolute;
+      top:-5px;          /* üstten 40px aşağıda */
+      left: 20px;        /* soldan 100px içeride */
+      font-size: 50px;    /* yazı boyutu */
+      margin: 0;
+      z-index: 1;
+      color: green;        /* işaretin rengi */
+
+    }
+
+
+
+    /* BAŞLIK */
+    #başlık1{
+      position: absolute;
+      top:100px;          /* üstten 40px aşağıda */
+      left: 75px;        /* soldan 100px içeride */
+      font-size: 20px;    /* yazı boyutu */
+      margin: 0;
+      z-index: 1;
+      color: green;        /* işaretin rengi */
+
+    }
+
+    /* BAŞLIK */
+    #başlık2{
+      position: absolute;
+      top:450px;          /* üstten 40px aşağıda */
+      left: 50px;        /* soldan 100px içeride */
+      font-size: 20px;    /* yazı boyutu */
+      margin: 0;
+      z-index: 1;
+      color: green;        /* işaretin rengi */
+
+    }
+    /* BAŞLIK */
+    #başlık3{
+      position: absolute;
+      top:800px;          /* üstten 40px aşağıda */
+      left: 50px;        /* soldan 100px içeride */
+      font-size: 20px;    /* yazı boyutu */
+      margin: 0;
+      z-index: 1;
+      color: green;        /* işaretin rengi */
+
+    }
+
+
+    /* BAŞLIK */
+    #başlık4{
+      position: absolute;
+      top:1180px;          /* üstten 40px aşağıda */
+      left: 50px;        /* soldan 100px içeride */
+      font-size: 20px;    /* yazı boyutu */
+      margin: 0;
+      z-index: 1;
+      color: green;        /* işaretin rengi */
+
+    }
+
+
+
+    /* ÇİZGİ */
+    #cizgi {
+      position: absolute;
+      top: 60px;
+      left: 10px;
+      width: 1650px;       /* çizginin uzunluğu */
+      height: 2px;        /* çizginin kalınlığı */
+      background-color: black;
+      z-index: 1;
+    }
+
+
+
+    /* ÇİZGİ */
+    #cizgi2 {
+      position: absolute;
+      top: 425px;
+      left: 10px;
+      width: 1300px;       /* çizginin uzunluğu */
+      height: 1px;        /* çizginin kalınlığı */
+      background-color: rgba(10, 10, 10, 0.521);
+      z-index: 1;
+    }
+
+
+
+
+    /* ÇİZGİ */
+    #cizgi3 {
+      position: absolute;
+      top: 765px;
+      left: 10px;
+      width: 1300px;       /* çizginin uzunluğu */
+      height: 1px;        /* çizginin kalınlığı */
+      background-color: rgba(10, 10, 10, 0.521);
+      z-index: 1;
+    }
+
+
+
+
+    /* ÇİZGİ */
+    #cizgi4 {
+      position: absolute;
+      top: 1165px;
+      left: 10px;
+      width: 1300px;       /* çizginin uzunluğu */
+      height: 1px;        /* çizginin kalınlığı */
+      background-color: rgba(10, 10, 10, 0.521);
+      z-index: 1;
+    }
+
+
+
+
+    /* PARAGRAF YAZISI */
+    #yazi1 {
+      position: absolute;
+      top: 100px;
+      left: 300px;
+      width: 945px;       /* yazının kaplayacağı genişlik */
+      font-size: 16px;
+      margin: 0;
+      text-align: justify;
+
+    }
+
+
+
+    /* PARAGRAF YAZISI */
+    #yazi2 {
+      position: absolute;
+      top: 450px;
+      left: 300px;
+      width: 945px;       /* yazının kaplayacağı genişlik */
+      font-size: 16px;
+      margin: 0;
+      text-align: justify;
+
+    }
+
+
+
+    /* PARAGRAF YAZISI */
+    #yazi3 {
+      position: absolute;
+      top: 800px;
+      left: 300px;
+      width: 945px;       /* yazının kaplayacağı genişlik */
+      font-size: 16px;
+      margin: 0;
+      text-align: justify;
+
+    }
+
+
+  
+    /* PARAGRAF YAZISI */
+    #yazi4 {
+      position: absolute;
+      top: 1190px;
+      left: 300px;
+      width: 945px;       /* yazının kaplayacağı genişlik */
+      font-size: 16px;
+      margin: 0;
+      text-align: justify;
+
+    }
+
+
+  
+
+
+    /* 2. DİKDÖRTGEN (çerçeveli, köşeleri yuvarlak) */
+    #dikdortgen1 {
+      position: absolute;
+      top: 5px;
+      left: 10px;
+      width: 1525px;
+      height: 50px;
+      background-color: #fdfeff;  /* sarı, renk kodu ile */
+      border-radius: 15px;           /* köşeleri yuvarlar */
+      box-sizing: border-box;
+    }
+
+
+
+
+  </style>
+</head>
+
+<body>
+  <h1 id="anasayfa">ana sayfa</h1>
+
+  <h2 id="haberler">haberler</h2>
+
+  <h3 id="ekohesaplayıcı">eko hesaplayıcı</h3>
+
+  <h4 id="kullanıcıhesabı">kullanıcı hesabı</h4>
+
+  <h5 id="günlükgörevler">günlük görevler</h5>
+
+  <h7 id="logo">♻</h7>
+
+  <h8 id="başlık1">İklim değişikliği nedir?</h8>
+
+  <div id="cizgi"></div>
+
+  <div id="cizgi2"></div>
+
+  <div id="cizgi3"></div>
+
+  <div id="cizgi4"></div>
+
+  <div id="dikdortgen1"></div>
+
+  <h8 id="başlık2">Bu problem ne kadar ciddi?<br>Bizi ilgilendiriyor mu?</h8>
+
+  <h8 id="başlık3"> İklim değişikliğini tetikleyen<br>faktörler nelerdir?</h8>
+
+  <h1 id="başlık4"> İklim değişikliğini<br>nasıl yavaşlatabiliriz?</h1>
+
+
+
+
+
+
+
+
+
+
+
+  <p id="yazi1">İklim değişikliği, Dünya’nın uzun yıllar boyunca sıcaklık, yağış, rüzgâr ve diğer hava olaylarında meydana gelen kalıcı değişikliklerdir. İklim, hava durumundan farklıdır. Hava durumu günlük veya kısa süreli değişirken, iklim uzun yıllar boyunca gözlemlenen genel hava koşullarını ifade eder.
+
+Günümüzde yaşanan iklim değişikliğinin en önemli nedenlerinden biri insan faaliyetleridir. Özellikle kömür, petrol ve doğal gaz gibi fosil yakıtların kullanılması atmosfere fazla miktarda karbondioksit ve diğer sera gazlarının salınmasına neden olur. Bu gazlar atmosferde birikerek Dünya’dan uzaya kaçması gereken ısının bir kısmının tutulmasına yol açar. Buna sera etkisi denir.
+
+Ormanların yok edilmesi de iklim değişikliğini hızlandırır. Çünkü ağaçlar atmosferdeki karbondioksiti emerek karbonu depolar. Ormanların azalması, atmosferde daha fazla karbondioksit kalmasına neden olabilir.
+
+İklim değişikliğinin sonucunda Dünya’nın ortalama sıcaklığı artabilir. Bunun yanında kuraklık, aşırı sıcak hava, şiddetli yağışlar, seller ve bazı bölgelerde su kaynaklarının azalması gibi olaylar daha sık veya daha şiddetli hale gelebilir. Buzulların ve kara üzerindeki buzların erimesi de deniz seviyelerinin yükselmesine katkıda bulunur.
+
+İklim değişikliği yalnızca doğayı değil, insanları, tarımı, hayvanları ve ekonomiyi de etkileyebilir. Örneğin aşırı sıcaklıklar tarım ürünlerinin yetişmesini zorlaştırabilir ve su kaynakları üzerindeki baskıyı artırabilir. Bazı hayvan ve bitki türleri ise değişen sıcaklık ve yaşam koşullarına uyum sağlamakta zorlanabilir.
+
+İklim değişikliğini yavaşlatmak için yenilenebilir enerji kaynaklarını kullanmak, enerji tasarrufu yapmak, toplu taşımayı tercih etmek, ağaçları ve ormanları korumak, geri dönüşümü artırmak ve gereksiz tüketimi azaltmak gibi birçok yöntem uygulanabilir.
+
+Kısacası, iklim değişikliği yalnızca gelecekte ortaya çıkabilecek bir sorun değil, günümüzde de etkileri görülen küresel bir problemdir. Bu nedenle bireylerin, toplumların ve ülkelerin birlikte hareket ederek sera gazı salımlarını azaltması ve doğal kaynakları daha bilinçli kullanması önemlidir.</p>
+
+
+
+ <p id="yazi2">İklim değişikliği, günümüzde dünyanın karşı karşıya olduğu en önemli çevre sorunlarından biridir. Dünya’nın ortalama sıcaklığındaki artış, yalnızca havaların daha sıcak olması anlamına gelmez. Aynı zamanda yağış düzenlerinin değişmesine, kuraklıkların artmasına, buzulların erimesine, deniz seviyelerinin yükselmesine ve aşırı hava olaylarının daha sık görülmesine neden olabilir.
+
+Bu problem hepimizi ilgilendirir, çünkü iklim değişikliği günlük yaşamımızı birçok farklı şekilde etkileyebilir. Örneğin sıcaklıkların artması, özellikle yaz aylarında aşırı sıcak hava dalgalarının görülmesine neden olabilir. Yağışların azalması bazı bölgelerde su sıkıntısına yol açabilir. Kuraklık ise tarım ürünlerinin yetişmesini zorlaştırarak gıda üretimini ve dolayısıyla gıda fiyatlarını etkileyebilir.
+
+İklim değişikliği aynı zamanda doğal yaşamı da tehdit eder. Bazı hayvan ve bitki türleri değişen sıcaklık ve yağış koşullarına uyum sağlamakta zorlanabilir. Ormanların zarar görmesi ve doğal yaşam alanlarının azalması, ekosistemlerin dengesini bozabilir.
+
+Sorunun bir diğer önemli yönü ise gelecek nesilleri etkilemesidir. Bugün atmosfere salınan sera gazları uzun süre atmosferde kalabildiği için iklim değişikliğinin etkileri yalnızca günümüzde yaşayan insanlarla sınırlı değildir. Gelecekte çocuklar ve gençler daha sıcak hava, su kaynakları üzerindeki baskı ve değişen doğal koşullarla karşı karşıya kalabilir.
+
+Bu nedenle iklim değişikliğiyle mücadele etmek hepimizin ortak sorumluluğudur. Fosil yakıtların kullanımını azaltmak, yenilenebilir enerji kaynaklarından yararlanmak, elektrik ve suyu tasarruflu kullanmak, toplu taşımayı tercih etmek, geri dönüşüm yapmak ve doğal alanları korumak bu mücadeleye katkı sağlayabilir.
+
+Kısacası, iklim değişikliği uzak bir gelecekte ortaya çıkacak bir sorun değildir. Etkileri günümüzde de görülebilen ve yaşamımızın birçok alanını ilgilendiren uzun vadeli bir problemdir. Bu nedenle hem bireysel hem de toplumsal olarak daha bilinçli davranmak, gelecek nesillere daha sağlıklı ve yaşanabilir bir Dünya bırakmak açısından önemlidir.</p>
+
+
+
+
+<p id="yazi3">İklim değişikliğinin ortaya çıkmasında doğal ve insan kaynaklı birçok faktör bulunmaktadır. Ancak günümüzde yaşanan hızlı iklim değişikliğinin en önemli nedeni, insanların faaliyetleri sonucunda atmosfere fazla miktarda sera gazı salınmasıdır. Bu gazlar atmosferde ısıyı tutarak Dünya’nın ortalama sıcaklığının yükselmesine neden olur.
+
+İklim değişikliğini tetikleyen en önemli faktörlerden biri fosil yakıtların kullanılmasıdır. Kömür, petrol ve doğal gaz; elektrik üretiminde, fabrikalarda, araçlarda ve ısınmada yaygın olarak kullanılır. Bu yakıtların yakılması sonucunda atmosfere büyük miktarda karbondioksit salınır. Karbondioksit miktarının artması, sera etkisinin güçlenmesine ve küresel sıcaklıkların yükselmesine katkıda bulunur.
+
+Bir diğer önemli faktör ormansızlaşmadır. Ağaçlar atmosferdeki karbondioksiti emerek karbonu depolar ve havadaki sera gazlarının azalmasına yardımcı olur. Ormanların kesilmesi veya yakılması durumunda ise bu doğal karbon depolama kapasitesi azalır. Ayrıca ağaçlarda depolanan karbonun atmosfere karbondioksit olarak geri dönmesi de iklim değişikliğini hızlandırabilir.
+
+Sanayi ve ulaşım faaliyetleri de önemli etkenler arasındadır. Fabrikalarda üretim yapmak için büyük miktarda enerji kullanılır ve bazı üretim süreçlerinde sera gazları ortaya çıkar. Benzin ve dizel kullanan otomobiller, kamyonlar, uçaklar ve gemiler de atmosfere sera gazları bırakır. Bu nedenle enerji tüketiminin ve fosil yakıt kullanımının artması iklim değişikliğini etkileyebilir.
+
+Tarım ve hayvancılık da iklim değişikliğinde rol oynar. Özellikle büyükbaş hayvanların sindirim süreçleri sonucunda metan gazı açığa çıkar. Tarımda kullanılan bazı gübreler ise atmosfere azot oksit salınmasına neden olabilir. Bunun yanında çöplerin ve organik atıkların uygun şekilde yönetilmemesi sonucunda da metan gibi sera gazları oluşabilir.
+
+Bunların dışında aşırı tüketim, enerji israfı ve doğal alanların tahrip edilmesi de iklim değişikliğini dolaylı olarak artırabilir. Daha fazla ürün üretmek için daha fazla enerji ve doğal kaynak kullanılması gerekir. Bu nedenle tüketim alışkanlıkları da çevre üzerinde önemli bir etkiye sahiptir.
+
+Kısacası, fosil yakıt kullanımı, ormansızlaşma, sanayi, ulaşım, tarım, hayvancılık, atıklar ve aşırı tüketim iklim değişikliğini tetikleyen başlıca faktörlerdir. Bu faktörlerin azaltılması, sera gazı salımlarının düşürülmesine ve iklim değişikliğinin etkilerinin sınırlandırılmasına yardımcı olabilir.</p>
+
+
+
+<p id="yazi4">İklim değişikliğini yavaşlatmak için öncelikle atmosfere salınan sera gazlarının miktarını azaltmamız gerekir. Bunun için hem devletlerin ve şirketlerin hem de bireylerin yapabileceği birçok şey vardır. Özellikle enerji üretiminde ve ulaşımda fosil yakıtların kullanımını azaltmak önemli bir adımdır.
+
+Yenilenebilir enerji kaynaklarının kullanılması iklim değişikliğiyle mücadelede önemli bir yöntemdir. Güneş, rüzgâr ve hidroelektrik gibi kaynaklardan enerji üretmek, kömür, petrol ve doğal gaza olan ihtiyacın azalmasına yardımcı olabilir. Evlerde ve okullarda elektrik ve ısınma için enerjiyi daha dikkatli kullanmak da gereksiz enerji tüketimini azaltır.
+
+Ulaşım alışkanlıklarımızı değiştirmek de önemli bir katkı sağlayabilir. Kısa mesafelerde yürümek veya bisiklete binmek, daha uzun mesafelerde ise toplu taşımayı tercih etmek yakıt tüketimini ve ulaşım kaynaklı emisyonları azaltabilir. Elektrikli araçların yaygınlaşması da enerji kaynağına bağlı olarak fosil yakıt kullanımını azaltmaya yardımcı olabilir.
+
+Ormanları ve doğal alanları korumak da büyük önem taşır. Ağaçlar atmosferdeki karbondioksitin bir bölümünü emerek karbonu depolar. Bu nedenle ormanların korunması, yeni ağaçların dikilmesi ve ormansızlaşmanın önlenmesi iklim değişikliğiyle mücadeleye katkı sağlar. Ancak ağaç dikmek tek başına yeterli değildir; mevcut doğal alanların korunması da önemlidir.
+
+Günlük yaşamda tüketimi azaltmak, ürünleri uzun süre kullanmak, geri dönüşüm yapmak ve israfı önlemek de faydalıdır. Özellikle yiyeceklerin çöpe atılmasını azaltmak, suyu ve elektriği gereksiz yere kullanmamak doğal kaynakların korunmasına yardımcı olur.
+
+Kısacası, iklim değişikliğini tamamen ortadan kaldırmak mümkün olmasa da sera gazı salımlarını azaltarak ve doğal kaynakları koruyarak etkilerini yavaşlatabiliriz. Bunun için enerji tasarrufu yapmak, yenilenebilir enerji kullanmak, toplu taşımayı tercih etmek, ormanları korumak ve daha bilinçli tüketmek gibi adımlar önemlidir.</p>
+
+
+
+
+
+</body>
+</html>
