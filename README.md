@@ -22,9 +22,7 @@ Ana sayfada iklim değişikliği ile ilgili çeşitli sorular ve cevapları bulu
 
 ## 📰 Haberler
 
-Haberler bölümünde iklim değişikliği ve çevre ile ilgili güncel haberler yer almaktadır.
-
-Haberlerde;
+Haberler bölümünde iklim değişikliği ve çevre ile ilgili haberler yer almaktadır.
 
 * 🌍 İklim değişikliği
 * 🌡️ Küresel ısınma
@@ -32,11 +30,11 @@ Haberlerde;
 * ☀️ Yenilenebilir enerji
 * 🌱 Çevre ve doğa
 
-gibi konular ele alınmaktadır.
+gibi konular hakkında bilgiler ve haberler bulunmaktadır.
 
 ## 🌱 Günlük Görevler
 
-Kullanıcıların her gün tamamlayabileceği farklı çevre dostu görevler bulunmaktadır.
+Kullanıcıların tamamlayabileceği farklı çevre dostu görevler bulunmaktadır.
 
 Örneğin:
 
@@ -63,51 +61,49 @@ gibi bilgiler bulunmaktadır.
 
 ## 🌍 Sen ve İklim Puanı
 
-Kullanıcıların tamamladıkları çevre dostu görevlerden kazandıkları puanları gösteren sistemdir.
+Kullanıcının tamamladığı çevre dostu görevlerden kazandığı puanları gösteren sistemdir.
 
-Kullanıcı daha fazla görev tamamladıkça puanı yükselir.
+Kullanıcı görevleri tamamladıkça puanı yükselir.
 
 ## 🎯 Projenin Amacı
 
 Projenin amacı, iklim değişikliği hakkında farkındalık oluşturmak ve kullanıcıları çevreye daha duyarlı davranışlara teşvik etmektir.
 
-Bilgilendirici içerikler, haberler ve görev sistemi bir araya getirilerek etkileşimli bir web sitesi oluşturulmuştur.
-
 ## 💻 Kullanılan Diller
 
-Projede kullanılan temel programlama dilleri:
+Projede kullanılan diller:
 
 * 🐍 **Python**
 * 🌐 **HTML**
-* 🎨 **CSS**
-* ⚡ **JavaScript**
 
-## 📚 Kullanılan Kütüphaneler
+## 📚 Kullanılan Kütüphane
 
-Python tarafında kullanılan kütüphaneler:
+Projede Python tarafında:
 
-* **Flask** – Web uygulamasını oluşturmak ve sayfaları yönetmek için
-* **Jinja2** – HTML sayfalarında dinamik içerik göstermek için
+* **Flask** – Web uygulamasını oluşturmak ve sayfaları yönetmek için kullanılmıştır.
 
-> Eğer projede başka Python kütüphaneleri kullanılıyorsa bu listeye eklenebilir.
-
-## 🚀 Projeyi Çalıştırma
-
-Projeyi çalıştırmak için öncelikle Python'un bilgisayarınızda kurulu olması gerekir.
-
-Gerekli kütüphaneleri yüklemek için:
+Kütüphaneyi yüklemek için:
 
 ```bash
 pip install flask
 ```
 
-Daha sonra Python dosyasını çalıştırın:
+## 🚀 Projeyi Çalıştırma
+
+1. Python 3.x'in bilgisayarınızda kurulu olduğundan emin olun.
+2. Flask kütüphanesini yükleyin:
+
+```bash
+pip install flask
+```
+
+3. Proje klasöründe Python dosyasını çalıştırın:
 
 ```bash
 python app.py
 ```
 
-Ardından terminalde belirtilen yerel adresi tarayıcıda açarak web sitesine ulaşabilirsiniz.
+4. Terminalde verilen yerel adresi tarayıcıda açın.
 
 ## 📂 Proje Yapısı
 
@@ -115,35 +111,14 @@ Ardından terminalde belirtilen yerel adresi tarayıcıda açarak web sitesine u
 📦 iklim-degisikligi-projesi
 │
 ├── 📄 app.py
-├── 📄 requirements.txt
 ├── 📄 README.md
 │
 ├── 📁 templates
 │   └── 📄 index.html
 │
-├── 📁 static
-│   ├── 📄 style.css
-│   ├── 📄 script.js
-│   └── 📁 images
-│
-└── 📁 ...
+└── 📁 static
+    └── 📄 ...
 ```
-
-## 📋 Gereksinimler
-
-Projeyi çalıştırmak için:
-
-* Python 3.x
-* Flask
-* Modern bir web tarayıcısı
-
-`requirements.txt` dosyasına:
-
-```text
-Flask
-```
-
-eklenebilir.
 
 ## 🌱 Hedef
 
@@ -153,6 +128,7 @@ Projenin hedefi, iklim değişikliği hakkında insanların bilgi edinmesini sa�
 
 ## 📝 Kısaca
 
-**Bu proje; iklim değişikliği hakkında bilgi veren, güncel haberleri gösteren, kullanıcılara günlük çevre görevleri sunan ve görevler tamamlandıkça puan kazandıran bir farkındalık web sitesidir.**
+**Bu proje; iklim değişikliği hakkında bilgi veren, iklim haberlerini gösteren, kullanıcılara günlük çevre görevleri sunan ve görevler tamamlandıkça puan kazandıran bir farkındalık web sitesidir.**
 
 ### 💚 Küçük bir adım, büyük bir değişim.
+
